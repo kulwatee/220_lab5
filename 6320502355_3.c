@@ -16,7 +16,7 @@ int main()
                 q=q/3;
             while(q%5==0)
                 q=q/5;
-            if(q==0)
+            if(q==1)
                 k++;
         }
         x++;
