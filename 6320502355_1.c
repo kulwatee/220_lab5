@@ -7,4 +7,8 @@ int main()
   int n[x];
   for(i=0;i<x;i++)
     scanf("%s",q[i]);
+  for(i=0;i<n;i++)
+  {
+
+  }
 }

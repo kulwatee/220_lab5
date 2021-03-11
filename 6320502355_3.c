@@ -10,16 +10,13 @@ int main()
         else
         {
             q=x;
-            while(q>1)
-            {
-                i=2;
-                while(q%i!=0)
-                    i++;
-                q=q/i;
-                if(i!=2&&i!=3&&i!=5)
-                    break;
-            }
-            if(i==2||i==3||i==5)
+            while(q%2==0)
+                q=q/2;
+            while(q%3==0)
+                q=q/3;
+            while(q%5==0)
+                q=q/5;
+            if(q==0)
                 k++;
         }
         x++;
