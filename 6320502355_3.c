@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,x=1,k=0,i=2;
+    int n,x=1,k=0,i=2,q;
     scanf("%d",n);
     while(x>=1&&n!=k)
     {
@@ -9,12 +9,14 @@ int main()
             k++;
         else
         {
-            while(x>1)
+            q=x;
+            while(q>1)
             {
-                while(x%i!=0)
+                i=2;
+                while(q%i!=0)
                     i++;
-                x=x/i;
-                if(i!=2||i!=3||i!=5)
+                q=q/i;
+                if(i!=2&&i!=3&&i!=5)
                     break;
             }
             if(i==2||i==3||i==5)
