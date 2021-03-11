@@ -16,8 +16,11 @@ int main()
                     break;
                 }
                 printf("_");
-                if()
-                }
+            }
+            if(i<n/2)
+                q++;
+            else
+                q--;
         }
     }
     else
@@ -26,10 +29,19 @@ int main()
         {
             for(j=0; j<n-1; j++)
             {
-
+                if(j==(n/2)-q||j==(n/2)+q)
+                {
+                    printf("*");
+                    break;
+                }
+                printf("_");
             }
+            if(i<(n/2)-1)
+                q++;
+            else if(i>n/2)
+                q--;
         }
-        if(i)
-        }
+
+    }
 }
 
