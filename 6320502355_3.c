@@ -2,8 +2,8 @@
 int main()
 {
     int n,x=1,k=0,i=2,q;
-    scanf("%d",n);
-    while(x>=1&&n!=k)
+    scanf("%d",&n);
+    while(n!=k)
     {
         if(x==1)
             k++;
@@ -18,10 +18,16 @@ int main()
                 q=q/5;
             if(q==1)
                 k++;
+
         }
+
+
         x++;
+
 
     }
     printf("%d",x-1);
+
+
 
 }
