@@ -20,7 +20,8 @@ int main()
                 k++;
         }
         x++;
+
     }
-    printf("%d",x);
+    printf("%d",x-1);
 
 }
