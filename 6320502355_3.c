@@ -7,7 +7,6 @@ int main()
     {
         if(x==1)
             k++;
-
         else
         {
             while(x>1)
@@ -17,13 +16,11 @@ int main()
                 x=x/i;
                 if(i!=2||i!=3||i!=5)
                     break;
-                k++;
             }
+            if(i==2||i==3||i==5)
+                k++;
         }
         x++;
-
-
-
     }
     printf("%d",x);
 
